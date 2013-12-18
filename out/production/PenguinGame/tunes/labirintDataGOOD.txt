@@ -1,0 +1,199 @@
+{
+	 "rotationTime": {
+        "value": "2000",
+        "name": "rotationTime",
+        "desc": "delay for rotate map",
+        "type": "input_int"
+    },
+	"lifeCount": {
+        "value": "3",
+        "name": "lifeCount",
+        "desc": "life count for user ",
+        "type": "input_int"
+    },
+	
+	
+	
+	"levels": {
+        "value": [
+            {
+                "id": {
+                    "value": "0",
+                    "name": "level id",
+                    "desc": "level id",
+                    "type": "input_int"
+                },
+                "rotationCount": {
+                    "value": "1",
+                    "name": "level rotationCount",
+                    "desc": "level rotationCount",
+                    "type": "input_int"
+                },
+                "mapIndex": {
+                    "value": "1",
+                    "name": "mapIndex",
+                    "desc": "id for map",
+                    "type": "input_int"
+                }
+            },
+            {
+                "id": "1",
+                "rotationCount": "1",
+                "mapIndex": "1"
+            },
+            {
+                "id": "2",
+                "rotationCount": "2",
+                "mapIndex": "2"
+            }
+        ],
+        "name": "levels",
+        "desc": "levels for our game",
+        "type": "childs"
+    },
+        "maps":{
+		"value":[
+			{
+				"id":{
+					"value":"0",
+					"name":"map id",
+					"desc":"map id",
+					"type":"input_int"	
+				},
+				"name":{
+					"value":"1",
+					"name":"map name",
+					"desc":"map name",
+					"type":"input_planetext"	
+											
+				},
+				"itemPositionFirst":{
+					"value":"1",
+					"name":"position first",
+					"desc":"first position for item",
+					"type":"input_planetext"										
+				},
+                                "itemPositionSecond":{
+					"value":"1",
+					"name":"position second",
+					"desc":"second position for item",
+					"type":"input_planetext"										
+				},
+			
+                                "herouPosition":{
+					"value":"1",
+					"name":"herou position",
+					"desc":"position for our mouse",
+					"type":"input_planetext"										
+				},
+			
+                                  "enemyPosition":{
+					"value":"1",
+					"name":"enemy mouse position",
+					"desc":"position for enemy mouse",
+					"type":"input_planetext"										
+				},
+			
+                                "rows":{
+					"value":"1",
+					"name":"rows",
+					"desc":"count of rows in map",
+					"type":"input_int"										
+				},
+			
+                                  "colums":{
+					"value":"1",
+					"name":"columns",
+					"desc":"count of column in map",
+					"type":"input_int"										
+				},
+				"field":{
+					"value":"1",
+					"name":"gameField",
+					"desc":"game field for map",
+					"type":"input_planetext"										
+				}
+			
+			},
+
+	        {  
+                "id":"1",
+	        "name":"lab_6x6_1",
+                "itemPositionFirst":"4,0",
+                "itemPositionSecond":"6,0",
+                "colums":"11",
+		"field":"1,0,0,0,1",
+                "rows":"11",
+                "herouPosition":"0,0",
+                "enemyPosition":"10,0"
+			},
+{  
+                "id":"2",
+	        "name":"lab_6x6_2",
+                "itemPositionFirst":"4,0",
+                "itemPositionSecond":"6,0",
+                "colums":"11",
+                "rows":"11",
+		"field":"1,0,0,0,1",
+                "herouPosition":"0,0",
+                "enemyPosition":"10,0"
+			}
+],
+ "name": "maps",
+        "desc": "levels for our game",
+        "type": "childs"
+},
+"mapGroups":{
+	    "value":[
+                      {
+                        "id":{
+				"value":"0",
+				"name":"group id",
+				"desc":"group id",
+				"type":"input_int"	
+			},
+			"mapList":{
+				"value":"1",
+				"name":"maps",
+				"desc":"names of maps",
+				"type":"input_planetext"										
+			}
+},
+                        {"id":"1","mapList":"lab_6x6_1,lab_6x6_2,lab_6x6_3"}
+],
+        	"name":"mapGroups",
+        	"desc":"groups for our game map",
+        	"type":"childs"
+	},
+
+
+"mapList":{
+
+"value":[
+                      {
+                        "id":{
+				"value":"0",
+				"name":"level id",
+				"desc":"level id",
+				"type":"input_planetext"	
+			},
+			"filed":{
+				"value":"1",
+				"name":"mapIndex rotationCount",
+				"desc":"mapIndex rotationCount",
+				"type":"input_planetext"										
+			}
+},
+                         {"id":"lab_6x6_1","filed":"1,0,1"}
+],
+        	"name":"mapList",
+        	"desc":"mapList for our game map",
+        	"type":"childs"
+
+	
+}
+
+	
+
+
+}
